@@ -1,10 +1,10 @@
 from collections import deque
-
-n = int(input())
+import sys
+n = int(sys.stdin.readline())
 q = deque()
 
 for i in range(n):
-  a = input().split()
+  a = sys.stdin.readline().split()
   if a[0] == 'push':
     # print(a[1])
     q.append(int(a[1]))
@@ -28,3 +28,4 @@ for i in range(n):
     else:
       last = len(q)
       print(q[last - 1])
+#시간 초과 -> sys 빠른 입출력 하니까 해결
