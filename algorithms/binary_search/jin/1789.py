@@ -4,8 +4,8 @@ cnt =0
 foo = 1
 
 while result <n:
-  foo+=1
   result +=foo
   cnt+=1
+  foo+=1
 
-print(cnt)
+print(cnt-1)
